@@ -15,7 +15,7 @@ class Register extends React.Component {
 
             {/* check if user typed email has gmail render adding age field to the form */}
             {this.state["email"] != null && this.state["email"].indexOf('gmail') &&
-                <input type="number" name="age" placeholder="Mobile" onChange={(e) => this.onInputChange(e)} />
+                <input type="number" name="age" placeholder="Age" onChange={(e) => this.onInputChange(e)} />
             }
 
             {this.state.error != null && <p>{this.state.error}</p>}
